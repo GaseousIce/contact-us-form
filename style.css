@@ -1,0 +1,73 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@100&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+/* putting a gradient to the background */
+body{
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+}
+
+/* adding styles to the input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    display: block;                                                         /*making the elements to block elements, used this property so that we can center the fields by using "margin: 0px auto;"*/
+    background-color: rgba(255, 255, 255, 0.158);                         /*reducing the opacity of the fields*/
+    border: none;                                                           /*removing the border of the fields*/
+    border-radius: 6px;                                                     /*making the corners of the fields curved*/
+    padding: 12px;                                                          /*adding space inside the fields*/
+    margin: 5px auto;                                                       /*adding space among the fields,"auto" is used to align the fields in the center*/
+    width: 600px;                                                           /*widening the fields*/
+    font-size: 1rem;                                                        /*changing the font size to 1x the root element*/
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif; */
+    font-family: 'Fredoka One', cursive;                                    /*changing to cursive font*/
+    /* box-shadow: 2px 2px 10px black; */                                   /*adding box shadow*/
+}
+input[type="submit"]{                                                       /*adding styles to the submit button*/
+    display: block;
+    border: none;                                                           /*removing the border of the submit button*/
+    padding: 12px;                                                          /*adding space for the text inside the submit button*/
+    margin: 8px auto;                                                       /*adding space between the submit button and it's neighbouring elements, "auto" is used to center the submit button*/
+    border-radius: 6px;                                                     /*making the corners curved of the submit button*/
+    /* background-color: #FBAB7E; */
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); /*adding a gradient to submit button*/
+    cursor: pointer;                                                        /*when hovered on the button the cursor would change to pointer*/
+    font-size: 1rem;                                                        /*changed the font size of the button to 1x the root element*/
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif; */
+    font-family: 'Fredoka One', cursive;                                    /*changing the font of the text inside the submit button*/
+    /* box-shadow: 2px 2px 10px black; */
+}
+input[type="submit"]:hover{
+    /* background-color: #FFDEE9; */
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);  /*changing the gradient of the button when the cursor is hovered onto it*/
+}
+::placeholder{                                                              /*editing the properties of all the placeholder texts*/
+    color: white;                                                         /*changing the font color to white*/
+    font-size: 1rem;                                                        /*changing the font size of the placeholder text to 1x the root element*/
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif; */
+    font-family: 'Fredoka One', cursive;                                    /*changing the font style of the placeholder text*/
+    font-weight: 200;                                                       /*adjusting the font-weight of the placeholder text*/
+}
+h1,h4{                                                                      /*editing the properties of header*/
+    text-align: center;                                                     /*centering the header*/
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Yeseva One', cursive;                                     /*changing the font of the header*/
+    color: aliceblue;                                                     /*changing the color of the header*/
+    margin: 0;                                                              /*bringing the header texts close to each other*/
+}
+h1{                                                                         /*editing the properties of the main header*/
+    font-size: 6rem;                                                        /*enlarging the main header*/
+}
+h4{                                                                         /*editing the properties of the sub-header*/
+    font-size: 2rem;                                                        /*increasing the font size of the sub-header*/
+}
